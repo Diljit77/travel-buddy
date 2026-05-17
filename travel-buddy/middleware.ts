@@ -7,7 +7,7 @@ export async function middleware(req: NextRequest) {
 
   try {
     // ✅ Safe wrapper (prevents crash)
-    nextAuthToken = await getToken({ req });
+    nextAuthToken = await getToken({ req, secret: process.env.NEXTAUTH_SECRET });
   } catch (err) {
     console.log("NextAuth error:", err);
   }
