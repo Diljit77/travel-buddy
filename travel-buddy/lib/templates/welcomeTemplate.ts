@@ -14,7 +14,7 @@ export const welcomeTemplate = (name: string) => {
     </p>
 
     <div style="text-align:center; margin: 20px 0;">
-      <a href="http://localhost:3000/home" style="
+      <a href="${process.env.NEXTAUTH_URL || 'http://localhost:3000'}/home" style="
         background:#4f46e5;
         color:white;
         padding:10px 20px;
