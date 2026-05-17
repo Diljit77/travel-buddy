@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { getToken } from "next-auth/jwt";
 
-export async function middleware(req: NextRequest) {
+export async function proxy(req: NextRequest) {
   let nextAuthToken = null;
 
   try {
@@ -20,7 +20,7 @@ export async function middleware(req: NextRequest) {
 
   const isAuthPage =
     pathname.startsWith("/login") || pathname.startsWith("/verify-email")||
-    pathname.startsWith("/signup") || pathname.startsWith("/forget-password") || pathname.startsWith("/reset-password")
+    pathname.startsWith("/signup") || pathname.startsWith("/forget-password") || pathname.startsWith("/reset-password");
 
   // 🔐 Protect routes
   if (!isLoggedIn && !isAuthPage) {
