@@ -1,0 +1,33 @@
+// Theme tokens for the application
+export const T = {
+  dark: {
+    bg: "#08080c",
+    sidebarBg: "#0f0f15",
+    card: "#15151e",
+    border: "rgba(255,255,255,0.06)",
+    text: "#ffffff",
+    muted: "#8a8a98",
+    accent: "#3b82f6",
+    accentOrange: "#f97316",
+    accentGreen: "#10b981",
+    shadow: "0 10px 30px -10px rgba(0,0,0,0.5)",
+    highlight: "rgba(59,130,246,0.08)",
+    saveBadge: "rgba(16,185,129,0.12)",
+    saveText: "#4ade80",
+  },
+  light: {
+    bg: "#f8fafc",
+    sidebarBg: "#ffffff",
+    card: "#ffffff",
+    border: "rgba(0,0,0,0.06)",
+    text: "#0f172a",
+    muted: "#64748b",
+    accent: "#3b82f6",
+    accentOrange: "#f97316",
+    accentGreen: "#10b981",
+    shadow: "0 10px 30px -10px rgba(0,0,0,0.1)",
+    highlight: "rgba(59,130,246,0.04)",
+    saveBadge: "rgba(16,185,129,0.08)",
+    saveText: "#16a34a",
+  },
+};

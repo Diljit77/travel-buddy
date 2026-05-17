@@ -1,0 +1,171 @@
+export const AIRPORT_CODES: Record<string, string> = {
+  // Major Metro Cities
+  Delhi: "DEL",
+  Mumbai: "BOM",
+  Bangalore: "BLR",
+  Bengaluru: "BLR",
+  Chennai: "MAA",
+  Kolkata: "CCU",
+  Hyderabad: "HYD",
+  Pune: "PNQ",
+  Ahmedabad: "AMD",
+  Jaipur: "JAI",
+  Lucknow: "LKO",
+  Chandigarh: "IXC",
+  Kochi: "COK",
+  Cochin: "COK",
+  Goa: "GOI",
+  Dabolim: "GOI",
+  Mopa: "GOX",
+  Nagpur: "NAG",
+  Indore: "IDR",
+  Surat: "STV",
+  Patna: "PAT",
+  Bhopal: "BHO",
+  Bhubaneswar: "BBI",
+  Visakhapatnam: "VTZ",
+  Vizag: "VTZ",
+  Vadodara: "BDQ",
+  Coimbatore: "CJB",
+  Madurai: "IXM",
+  Tiruchirappalli: "TRZ",
+  Trichy: "TRZ",
+  Mangalore: "IXE",
+  Mysore: "MYQ",
+  Mysuru: "MYQ",
+  Vijayawada: "VGA",
+  Rajahmundry: "RJA",
+  Tirupati: "TIR",
+  Raipur: "RPR",
+  Ranchi: "IXR",
+  Jodhpur: "JDH",
+  Udaipur: "UDR",
+  Jaisalmer: "JSA",
+  Amritsar: "ATQ",
+  Ludhiana: "LUH",
+ Shimla: "IXC",
+  Dharamshala: "DHM",
+  Kangra: "DHM",
+  Kullu: "KUU",
+  Manali: "KUU",
+  Jammu: "IXJ",
+  Srinagar: "SXR",
+  Leh: "IXL",
+  Agra: "AGR",
+  Kanpur: "KNU",
+  Prayagraj: "IXD",
+  Allahabad: "IXD",
+  Varanasi: "VNS",
+  Gorakhpur: "GOP",
+  Bareilly: "BEK",
+  Hindon: "HDO",
+  Ayodhya: "AYJ",
+  Kushinagar: "KBK",
+
+  // Rajasthan
+  Bikaner: "BKB",
+  Kota: "KTU",
+
+  // Gujarat
+  Bhavnagar: "BHU",
+  Jamnagar: "JGA",
+  Rajkot: "RAJ",
+  Porbandar: "PBD",
+  Kandla: "IXY",
+  Keshod: "IXK",
+  Bhuj: "BHJ",
+
+  // Maharashtra
+  Aurangabad: "IXU",
+  Nashik: "ISK",
+  Kolhapur: "KLH",
+  Shirdi: "SAG",
+  Jalgaon: "JLG",
+  Nanded: "NDC",
+
+  // Karnataka
+  Hubli: "HBX",
+  Belgaum: "IXG",
+  Belgavi: "IXG",
+  Kalaburagi: "GBI",
+  Gulbarga: "GBI",
+  Bidar: "IXX",
+  MangaloreCity: "IXE",
+
+  // Tamil Nadu
+  Salem: "SXV",
+  Tuticorin: "TCR",
+  Thoothukudi: "TCR",
+
+  // Kerala
+  Kannur: "CNN",
+  Kozhikode: "CCJ",
+  Calicut: "CCJ",
+  Thiruvananthapuram: "TRV",
+  Trivandrum: "TRV",
+
+  // Andhra Pradesh & Telangana
+  Kurnool: "KJB",
+  Kadapa: "CDP",
+  Gannavaram: "VGA",
+  Warangal: "WGC",
+
+  // Odisha
+  Jharsuguda: "JRG",
+  Rourkela: "RRK",
+
+  // Bihar
+  Gaya: "GAY",
+  Darbhanga: "DBR",
+
+  // Jharkhand
+  Deoghar: "DGH",
+  Jamshedpur: "IXW",
+  Bokaro: "BKU",
+
+  // Chhattisgarh
+  Bilaspur: "PAB",
+  Jagdalpur: "JGB",
+
+  // West Bengal
+  Bagdogra: "IXB",
+  Durgapur: "RDP",
+  CoochBehar: "COH",
+  Malda: "LDA",
+
+  // Northeast India
+  Guwahati: "GAU",
+  Dibrugarh: "DIB",
+  Jorhat: "JRH",
+  Silchar: "IXS",
+  Tezpur: "TEZ",
+  Lilabari: "IXI",
+  Shillong: "SHL",
+  Imphal: "IMF",
+  Agartala: "IXA",
+  Aizawl: "AJL",
+  Dimapur: "DMU",
+  Itanagar: "HGI",
+  Pasighat: "IXT",
+
+  // Union Territories
+  PortBlair: "IXZ",
+  PortBlairCity: "IXZ",
+  Andaman: "IXZ",
+  Lakshadweep: "AGX",
+
+  // International Popular Destinations
+  Dubai: "DXB",
+  AbuDhabi: "AUH",
+  Singapore: "SIN",
+  Bangkok: "BKK",
+  London: "LHR",
+  Paris: "CDG",
+  NewYork: "JFK",
+  Toronto: "YYZ",
+  Sydney: "SYD",
+  Tokyo: "HND",
+  Doha: "DOH",
+  Muscat: "MCT",
+  KualaLumpur: "KUL",
+};
