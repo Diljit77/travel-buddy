@@ -4,13 +4,14 @@ import Trip from "@/models/trip";
 import { generateTripPlanGemini } from "@/lib/gemini";
 import { getTodayPlan, getCurrentActivity, budgetStatus } from "@/lib/journey-engine";
 
-export async function POST(req: Request, { params }: { params: { id: string } }) {
+export async function POST(req: Request, { params }: { params: Promise<{ id: string }> }) {
   try {
     await connectDB();
+    const { id } = await params;
     const body = await req.json();
     const { action, prompt, weather, currentTime } = body;
 
-    const trip = await Trip.findById(params.id);
+    const trip = await Trip.findById(id);
     if (!trip) {
       return NextResponse.json({ success: false, message: "Trip not found" }, { status: 404 });
     }

@@ -4,7 +4,7 @@ import { getIataCode, searchFlightsAeroDataBox } from "@/lib/api/flight";
 
 export async function GET(
   req: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
     await connectDB();

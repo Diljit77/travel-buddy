@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import Link from "next/link";
 import { resetPassword } from "@/lib/api/auth";
 import { useParams, useSearchParams } from "next/navigation";
@@ -68,7 +68,7 @@ function CheckItem({ met, text }: { met: boolean; text: string }) {
   );
 }
 
-export default function ResetPasswordPage() {
+function ResetPasswordContent() {
   const [form, setForm] = useState<ResetForm>({ password: "", confirmPassword: "" });
   const [errors, setErrors] = useState<ResetErrors>({});
   const [showPassword, setShowPassword] = useState(false);
@@ -434,5 +434,13 @@ export default function ResetPasswordPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function ResetPasswordPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center bg-[#f8fafc] dark:bg-[#08080c]"><div className="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div></div>}>
+      <ResetPasswordContent />
+    </Suspense>
   );
 }

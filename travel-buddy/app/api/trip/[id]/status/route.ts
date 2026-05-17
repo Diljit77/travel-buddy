@@ -2,12 +2,13 @@ import { NextResponse } from "next/server";
 import { connectDB } from "@/lib/db";
 import Trip from "@/models/trip";
 
-export async function PATCH(req: Request, { params }: { params: { id: string } }) {
+export async function PATCH(req: Request, { params }: { params: Promise<{ id: string }> }) {
   try {
     await connectDB();
+    const { id } = await params;
     const { status, lastKnownLocation } = await req.json();
 
-    const trip = await Trip.findById(params.id);
+    const trip = await Trip.findById(id);
     if (!trip) {
       return NextResponse.json({ success: false, message: "Trip not found" }, { status: 404 });
     }

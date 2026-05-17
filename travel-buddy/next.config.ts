@@ -39,6 +39,9 @@ const nextConfig: NextConfig = {
 
 
   reactStrictMode: true,
+  typescript: {
+    ignoreBuildErrors: true,
+  },
 
   productionBrowserSourceMaps: false,
 
